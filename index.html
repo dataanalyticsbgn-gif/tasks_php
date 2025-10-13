@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка файла</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        input[type="file"] {
+            margin-top: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Загрузка файла на сервер</h1>
+    
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="file_name">С каким именем сохранить файл на сервере:</label>
+            <input type="text" id="file_name" name="file_name" placeholder="Введите имя файла">
+        </div>
+        
+        <div class="form-group">
+            <label for="content">Выберите файл:</label>
+            <input type="file" id="content" name="content">
+        </div>
+        
+        <button type="submit">Загрузить файл</button>
+    </form>
+</body>
+</html>
