@@ -8,5 +8,5 @@
 Задача запускается в файле index1.php.
 
 ### Для решения задачи по теме "Файлы, html формы" созданы файлы:
--index.html
-- upload.php
+- [index.html] (https://github.com/dataanalyticsbgn-gif/tasks_php/blob/main/index.html) 
+- [upload.php] (https://github.com/dataanalyticsbgn-gif/tasks_php/blob/main/upload.php)
